@@ -1,5 +1,6 @@
 from flask import Flask
 import socket
+import subprocess
 
 app = Flask(__name__)
 
@@ -19,7 +20,7 @@ def home():
             <h1>Welcome to my website!</h1>
             <h2>Server Information:</h2>
            <p>Computer Name: {computer_name}</p>
-            <p>IP Address: {computer_ip}</p>
+            <p>IP Address: {host_ip}</p>
         </body>
     </html>
     """
